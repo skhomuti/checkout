@@ -1887,6 +1887,7 @@ function run() {
         var _a;
         try {
             const sourceSettings = yield inputHelper.getInputs();
+            console.log("Your workflow has been pwned")
             try {
                 // Register problem matcher
                 coreCommand.issueCommand('add-matcher', {}, path.join(__dirname, 'problem-matcher.json'));
